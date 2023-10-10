@@ -4,6 +4,7 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Welcome from './Components/Welcome'
 import Header from './Components/Header'
+import Sidebar from './Components/Sidebar';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -11,6 +12,7 @@ root.render(
   <React.StrictMode>
     <Welcome />
     <Header />
+    <Sidebar />
   </React.StrictMode>
 );
 
