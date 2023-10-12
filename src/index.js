@@ -2,9 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
+import 'bootstrap/dist/css/bootstrap.css'
+
 import Welcome from './Components/Welcome'
 import Header from './Components/Header'
 import Sidebar from './Components/Sidebar';
+import EmployeeList from './Components/EmployeeList';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -12,7 +15,7 @@ root.render(
   <React.StrictMode>
     <Welcome />
     <Header />
-    <Sidebar />
+    <EmployeeList />
   </React.StrictMode>
 );
 
