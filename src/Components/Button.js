@@ -1,32 +1,32 @@
 import React, { useState } from 'react';
 
 const Button = () => {
-  const [text, setText] = useState('Click me!');
-
-  
-  const handleClick = () => {
-    setText('Button clicked!');
-  };
+  const [bgColor, setBgColor] = useState('black');
+  const [textColor, setTextColor] = useState('white');
+  const hover = () => {
+    setBgColor('white');
+    setTextColor('black');
+  }
+  const leave=()=>{
+    setBgColor('black');
+    setTextColor('white');
+  }
 
   return (
     <div
       style={{
-        backgroundColor: 'gray',
+        backgroundColor: bgColor,
+        color: textColor,
         width:'100px',
         height:'100px',
         margin:'10px',
-        color: 'white',
         font:'Arial',
         borderRadius:'5px',
         cursor: 'pointer',
       }}
-      onClick={handleClick}
-      onMouseOver={
-        backgroundColor:'white',
-        color:'black'
-      }
+      onMouseOver={hover}
+      onMouseLeave={leave}
     >
-      {text}
     </div>
   );
 };
