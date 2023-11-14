@@ -13,11 +13,16 @@ import EmployeeList from './Components/EmployeeList';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Welcome />
-    <Header />
+
     <Router>
       <Sidebar />
       <Routes>
+      <Route path='/' element={
+        <>
+          <Welcome />
+          <Header />
+        </>
+        }/>
         <Route path='/employees' element={<EmployeeList />}/>
         <Route path='/about' element={<h1>All rights reserved</h1>}>
         </Route>
