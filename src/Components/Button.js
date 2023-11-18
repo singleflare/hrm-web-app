@@ -18,11 +18,10 @@ const Button = ({children}) => {
         backgroundColor: bgColor,
         color: textColor,
         width:'100px',
-        height:'100px',
-        margin:'10px',
+        margin:'5px',
         font:'Arial',
+        fontSize:'15pt',
         borderRadius:'5px',
-        cursor: 'pointer',
         textAlign:'center',
         verticalAlign:'middle'
       }}

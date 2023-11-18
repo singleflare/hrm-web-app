@@ -6,8 +6,8 @@ import 'bootstrap/dist/css/bootstrap.css'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Welcome from './Components/Welcome'
-import Header from './Components/Header'
-import Sidebar from './Components/Sidebar';
+import Header from './Components/TopNavBar'
+import TopNavBar from './Components/TopNavBar';
 import EmployeeList from './Components/EmployeeList';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -15,12 +15,12 @@ root.render(
   <React.StrictMode>
 
     <Router>
-      <Sidebar />
+      <TopNavBar />
+      <Header />
       <Routes>
       <Route path='/' element={
         <>
           <Welcome />
-          <Header />
         </>
         }/>
         <Route path='/employees' element={<EmployeeList />}/>

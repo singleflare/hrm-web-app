@@ -5,11 +5,13 @@ import './styles.css'
 
 const Sidebar=()=> {
   return(
-  <div className="sidebarBg" style={{
+  <div 
+    style={{
     backgroundColor:'blue',
     position:'relative',
-    display:'inline-block'
-    }}>
+    display:'inline-block',
+    height:'100vh'
+  }}>
     <Link to="/"><Button>Home</Button></Link>
     <Link to="/employees"><Button>Employees</Button></Link>
     <Link to="/about"><Button>About</Button></Link>
