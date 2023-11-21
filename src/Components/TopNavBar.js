@@ -1,20 +1,17 @@
 import React from "react"
+import './styles.css'
 
 const TopNavBar=()=> {
   return(
-  <div
-    style={{
-      position:'relative',
-      top:'0',
-      backgroundColor:'red',
-      display:'inline-block',
-    }}>
-    <ul className='topnav' style={{
-      display:'flex'
-      
-    }}>
-      <li>Login</li>
-      <li>Register</li>
+  <div className="NavBar">
+    <ul className='NavList'>
+      <li className="NavItem">Home</li>
+      <li className="NavItem">Employees</li>
+      <li className="NavItem">About</li>
+    </ul>
+    <ul className='NavList'>
+      <li className="NavItem">Login</li>
+      <li className="NavItem">Register</li>
     </ul>
   </div>
   )

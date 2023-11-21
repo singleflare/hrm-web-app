@@ -1,3 +1,18 @@
-Sidebar{
-  position:relative
+body{
+  background-color: black;
+}
+.NavBar{
+  position:relative;
+  min-height: 50px;
+  color:white;
+  font-size: larger;
+  display:flex;
+  justify-content: space-between;
+}
+.NavList{
+}
+.NavItem{
+  display:inline-block;
+  padding: 10px;
+  background-color: orange;
 }

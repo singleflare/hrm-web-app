@@ -6,7 +6,6 @@ import 'bootstrap/dist/css/bootstrap.css'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Welcome from './Components/Welcome'
-import Header from './Components/TopNavBar'
 import TopNavBar from './Components/TopNavBar';
 import EmployeeList from './Components/EmployeeList';
 
@@ -16,13 +15,8 @@ root.render(
 
     <Router>
       <TopNavBar />
-      <Header />
       <Routes>
-      <Route path='/' element={
-        <>
-          <Welcome />
-        </>
-        }/>
+        <Route path='/' element={<><Welcome /></>}/>
         <Route path='/employees' element={<EmployeeList />}/>
         <Route path='/about' element={<h1>All rights reserved</h1>}>
         </Route>
