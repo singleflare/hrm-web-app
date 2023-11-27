@@ -11,5 +11,4 @@ const EmployeeList=()=>{
     </ul>
   )
 }
-
 export default EmployeeList

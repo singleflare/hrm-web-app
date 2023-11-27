@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const Button = ({children}) => {
   const [bgColor, setBgColor] = useState('black');
   const [textColor, setTextColor] = useState('white');
-  const hover = () => {
+  const hover=()=>{
     setBgColor('white');
     setTextColor('black');
   }

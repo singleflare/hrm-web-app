@@ -3,23 +3,18 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Routes } from 'react-router-dom';
+import myRoutes from './routes'
 
-import Welcome from './Components/Welcome'
 import TopNavBar from './Components/TopNavBar';
-import EmployeeList from './Components/EmployeeList';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-
     <Router>
       <TopNavBar />
       <Routes>
-        <Route path='/' element={<><Welcome /></>}/>
-        <Route path='/employees' element={<EmployeeList />}/>
-        <Route path='/about' element={<h1>All rights reserved</h1>}>
-        </Route>
+        {myRoutes}
       </Routes>
     </Router>
   </React.StrictMode>
