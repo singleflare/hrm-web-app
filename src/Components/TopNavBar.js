@@ -12,8 +12,8 @@ const TopNavBar=()=> {
       <Link to='/about'><li className="NavItem"><Button>About</Button></li></Link>
     </ul>
     <ul className='NavList'>
-      <li className="NavItem"><Button>Login</Button></li>
-      <li className="NavItem"><Button>Register</Button></li>
+      <Link to='/login'><li className="NavItem"><Button>Login</Button></li></Link>
+      <Link to='/register'><li className="NavItem"><Button>Register</Button></li></Link>
     </ul>
   </div>
   )
