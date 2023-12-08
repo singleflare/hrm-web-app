@@ -2,16 +2,17 @@ import React from "react"
 
 const Register=()=>{
   return(
-    <div className="Login">
-      <form action="" class="LoginForm">
-        <div className="Username">
-          <label className="UsernameLabel" for="name">Username</label>
-          <input className="UsernameInput" type="text"></input>
-        </div>
-        <div className="Password">
-          <label className="PasswordLabel" for="name">Password</label>
-          <input className="PasswordInput" type="text"></input>
-        </div>
+    <div className="Register">
+      <form action="" class="RegisterForm">
+        <label className="FullNameLabel" for="fullname">Full Name</label>
+        <input className="FullNameInput" id="fullname" type="text"></input>
+        <label className="BirthdateLabel" for="birthdate">Birth Date</label>
+        <input className="BirthdateInput" id="birthdate" type="date"></input>
+        <label className="UsernameLabel" for="username">Username</label>
+        <input className="UsernameInput" id="username" type="text"></input>
+        <label className="PasswordLabel" for="password">Password</label>
+        <input className="PasswordInput" id="password" type="password"></input>
+        <button type="submit" form="login" className="LoginBtn">Login</button>
       </form>
     </div>
   )

@@ -4,18 +4,15 @@ const Login=()=>{
   return(
     <div className="Login">
       <form action="" class="LoginForm" id="login">
-        <div className="Username">
-          <label className="UsernameLabel" for="username">Username</label>
-          <input className="UsernameInput" id="username" type="text"></input>
-        </div>
-        <div className="Password">
-          <label className="PasswordLabel" for="password">Password</label>
-          <input className="PasswordInput" id="password" type="text"></input>
-        </div>
+        <label className="UsernameLabel" for="username">Username</label>
+        <input className="UsernameInput" id="username" type="text"></input>
+        <label className="PasswordLabel" for="password">Password</label>
+        <input className="PasswordInput" id="password" type="password"></input>
         <button type="submit" form="login" className="LoginBtn">Login</button>
+        <span>Reset username/password</span>
+        <span>Not registered?</span>
       </form>
-      <a>Reset username/password</a>
-      <a>Not registered?</a>
+      
     </div>
   )
 }

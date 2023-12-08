@@ -5,10 +5,13 @@ label{
   font-size: 20pt;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+input[type=text],input[type=password]{
+  width:100%;
+}
 .NavBar{
   position:relative;
   color:white;
-  font-size: larger;
+  font-size: 15pt;
   display:flex;
   justify-content: space-between;
   background-color: orange;
@@ -20,16 +23,15 @@ label{
   display:inline-block;
   padding: 10px;
 }
-.Login{
-  position: absolute;
-  top:10%;
-  left:30%;
-  padding:10%;
+.Login,.Register{
+  padding:2%;
 
-  background-color: rgba(90,90,90,0.7);
-  border-radius: 5px;
+  background-color: rgba(90,90,90,0.2);
 
   display:flex;
   justify-content: center;
   align-items: center;
+}
+.Welcome{
+  margin:10px;
 }
