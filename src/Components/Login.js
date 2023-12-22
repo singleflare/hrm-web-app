@@ -12,7 +12,6 @@ const Login=()=>{
         <span>Reset username/password</span>
         <span>Not registered?</span>
       </form>
-      
     </div>
   )
 }

@@ -9,7 +9,7 @@ input[type=text],input[type=password]{
   width:100%;
 }
 .NavBar{
-  position:sticky;
+  position: sticky;
   display:flex;
   justify-content: space-between;
   background-color: orange;
@@ -22,7 +22,7 @@ input[type=text],input[type=password]{
   padding: 10px;
 }
 .Login,.Register{
-  padding:2%;
+  padding:1%;
 
   background-color: rgba(90,90,90,0.2);
 
@@ -30,7 +30,7 @@ input[type=text],input[type=password]{
   justify-content: center;
   align-items: center;
 }
-.Welcome{
+.Welcome,.About{
   margin:10px;
   background-color: bisque;
 }
