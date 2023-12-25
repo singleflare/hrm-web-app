@@ -1,5 +1,6 @@
 body{
   background-color: white;
+  margin: 0;
 }
 label{
   font-size: 20pt;
@@ -8,11 +9,14 @@ label{
 input[type=text],input[type=password]{
   width:100%;
 }
+Link{
+  background-color: aquamarine;
+}
 .NavBar{
   position: sticky;
   display:flex;
   justify-content: space-between;
-  background-color: orange;
+  background-color: black;
 }
 .NavList{
   
@@ -20,6 +24,15 @@ input[type=text],input[type=password]{
 .NavItem{
   display:inline-block;
   padding: 10px;
+  height:90%;
+}
+.EmpList{
+  border:'10px solid red'
+}
+.EmpItem{
+  list-style: none;
+  margin :10px 5px;
+  border:'10px solid red'
 }
 .Login,.Register{
   padding:1%;
@@ -31,6 +44,6 @@ input[type=text],input[type=password]{
   align-items: center;
 }
 .Welcome,.About{
-  margin:10px;
+  margin:1%;
   background-color: bisque;
 }

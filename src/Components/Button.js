@@ -4,7 +4,7 @@ const Button = ({children}) => {
   const [bgColor, setBgColor] = useState('black');
   const [textColor, setTextColor] = useState('white');
   const hover=()=>{
-    setBgColor('white');
+    setBgColor('gray');
     setTextColor('black');
   }
   const leave=()=>{
@@ -17,13 +17,10 @@ const Button = ({children}) => {
       style={{
         backgroundColor: bgColor,
         color: textColor,
-        width:'100px',
-        margin:'5px',
         font:'Arial',
-        fontSize:'15pt',
-        borderRadius:'5px',
-        textAlign:'center',
-        verticalAlign:'middle'
+        fontSize:'18pt',
+        padding:'10px',
+        transitionDuration:'0.1s'
       }}
       onMouseOver={hover}
       onMouseLeave={leave}
