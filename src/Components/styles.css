@@ -13,7 +13,6 @@ Link{
   background-color: aquamarine;
 }
 .NavBar{
-  position: sticky;
   display:flex;
   justify-content: space-between;
   background-color: black;
