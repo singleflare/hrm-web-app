@@ -7,6 +7,30 @@ import myRoutes from './routes'
 
 import TopNavBar from './Components/TopNavBar';
 
+import { Client } from 'pg'
+const client = new Client({
+  host: 'localhost',
+  port: 5432,
+  database: 'employees',
+  user: 'admin',
+  password: 'dong2002'
+})
+await client.connect()
+ 
+try {
+  console.log('Connected')
+  const res = await client.query('SELECT $1::text as message', ['Hello world!'])
+  console.log(res.rows[0].message) // Hello world!
+} 
+catch (err) {
+  console.error(err);
+} 
+finally {
+  await client.end()
+}
+
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
